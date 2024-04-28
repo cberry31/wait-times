@@ -25,21 +25,23 @@ class QueueTimes:
 
     def getWaitTimes(self, parkId):
         waitTimes = requests.get(f"https://queue-times.com/parks/{parkId}/queue_times.json")
+        if waitTimes.status_code != 200:
+            raise Exception(f"Failed to get wait times for park {parkId}")
         return waitTimes.json()
 
     def checkIfRideBackUp(self, rides):
         newlyUpRides = []
         for ride in rides:
-            if ride["is_open"] is True and ride["name"] in self.downRides:
-                self.downRides.remove(ride["name"])
+            if ride["is_open"] is True and ride["id"] in self.downRides:
+                self.downRides.remove(ride["id"])
                 newlyUpRides.append(ride)
                 print(f"{ride['name']} is back up!")
         return newlyUpRides
 
     def placeDownRides(self, rides):
         for ride in rides:
-            if ride["is_open"] is False and ride["name"] not in self.downRides:
-                self.downRides.append(ride["name"])
+            if ride["is_open"] is False and ride["id"] not in self.downRides:
+                self.downRides.append(ride["id"])
 
     def setDesiredWaitTimes(self):
         with open("rides.yaml", "r") as file:
