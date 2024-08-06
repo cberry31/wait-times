@@ -1,15 +1,21 @@
 wait_times:
-  6340: 30
-  295: 30
+  6340: 30 # Rise of the Resistance (Disneyland)
+  295: 30 # Radiator Springs Racers
+  323: 15 # Big Thunder Mountain Railroad
+  284: 30 # Space Mountain
+  326: 20 # Indiana Jones Adventure
+  312: 15 # Soarin' Around the World
 
 rides:
-  - 8843
-  - 295
-  - 322
-  - 313
-  - 326
-  - 323
-  - 6340
-  - 284
-  - 5476
-  - 6369
+  - 295 # Radiator Springs Racers
+  - 313 # Toy Story Midway Mania
+  - 323 # Big Thunder Mountain Railroad
+  - 6340 # Rise of the Resistance (Disneyland)
+  - 284 # Space Mountain
+  - 326 # Indiana Jones Adventure
+  # - 329 # Guardians of the Galaxy - Mission: BREAKOUT!
+  # - 8843  # WEB SLINGERS: A Spider-Man Adventure
+  # - 322   # Incredicoaster
+  # - 5476  # Slinky Dog Dash (Hollywood Studios)
+  # - 6369  # Rise of the Resistance (Hollywood Studios)
+  # - 325   # Haunted Mansion Holiday

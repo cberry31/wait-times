@@ -1,3 +1,4 @@
+import logging
 import requests
 import yaml
 
@@ -8,7 +9,11 @@ class QueueTimes:
         self.downRides = []
         self.desiredWaitTimes = {}
         self.desiredRides = []
-        pass
+
+    def setDesiredWaitTimes(self):
+        with open("rides.yaml", "r") as file:
+            waitTimes = yaml.safe_load(file)
+            self.desiredWaitTimes = waitTimes["wait_times"]
 
     def setDesiredRides(self):
         with open("rides.yaml", "r") as file:
@@ -35,7 +40,7 @@ class QueueTimes:
             if ride["is_open"] is True and ride["id"] in self.downRides:
                 self.downRides.remove(ride["id"])
                 newlyUpRides.append(ride)
-                print(f"{ride['name']} is back up!")
+                logging.info(f"{ride['name']} is back up!")
         return newlyUpRides
 
     def placeDownRides(self, rides):
@@ -43,16 +48,26 @@ class QueueTimes:
             if ride["is_open"] is False and ride["id"] not in self.downRides:
                 self.downRides.append(ride["id"])
 
-    def setDesiredWaitTimes(self):
-        with open("rides.yaml", "r") as file:
-            waitTimes = yaml.safe_load(file)
-            self.desiredWaitTimes = waitTimes["wait_times"]
-
-    def isShortWait(self, rides):
-        shortWait = []
+    def isLongWait(self, rides):
+        shortRides = []
+        logging.debug(f"isLongWait Rides: {rides}")
         for ride in rides:
+            if ride["id"] in self.desiredWaitTimes and ride["is_open"]:
+                if ride["wait_time"] > self.desiredWaitTimes[ride["id"]]:
+                    logging.info(f"{ride['name']} has a long wait time of {ride['wait_time']} minutes!")
+                else:
+                    shortRides.append(ride)
+        return shortRides
+
+    def isShortWait(self, rides, shortWaitAlreadyNotified):
+        shortWait = []
+        logging.debug(f"isShortWait Rides: {rides}")
+        logging.debug(f"Short Wait Already Notified: {shortWaitAlreadyNotified}")
+        for ride in rides:
+            if ride["id"] in shortWaitAlreadyNotified:
+                continue
             if ride["id"] in self.desiredWaitTimes and ride["is_open"]:
                 if ride["wait_time"] <= self.desiredWaitTimes[ride["id"]]:
                     shortWait.append(ride)
-                    print(f"{ride['name']} has a short wait time of {ride['wait_time']} minutes!")
+                    logging.info(f"{ride['name']} has a short wait time of {ride['wait_time']} minutes!")
         return shortWait
