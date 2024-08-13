@@ -1,6 +1,8 @@
 import logging
+import os
 import time
 from QueueTimes import QueueTimes
+from SES import SES
 
 # Park ID   | Park Name
 # -------------------
@@ -18,6 +20,7 @@ class Job:
         self.parkIds = [16, 17]
         self.queueTimes.setDesiredWaitTimes()
         self.queueTimes.setDesiredRides()
+        self.ses = SES()
 
     def main(self):
         # TODO: Add in SES to send an email when a ride is back up
@@ -42,6 +45,7 @@ class Job:
             # TODO: Send a notification that the ride is back up
             logging.info(f"Newly Up Rides: {newlyUpRides}")
             logging.info(f"Short Wait: {shortWait}")
+            self.ses.sendEmail("Ride Status Update", f"Newly Up Rides: {newlyUpRides}\nShort Wait: {shortWait}")
 
     def getAllRides(self):
         allRides = []
@@ -56,7 +60,7 @@ class Job:
 if __name__ == "__main__":
     logging.basicConfig(
         filename="log.txt",
-        level=logging.DEBUG,
+        level=os.environ.get("LOGGING_LEVEL", "INFO"),
         format="%(levelname)s:%(asctime)s %(message)s",
         datefmt="%m/%d/%Y %H:%M:%S",
     )
