@@ -18,7 +18,6 @@ class Job:
         self.parkIds = [16, 17]
         self.queueTimes.setDesiredWaitTimes()
         self.queueTimes.setDesiredRides()
-        self.shortWaitAlreadyNotified = []
 
     def main(self):
         # TODO: Add in SES to send an email when a ride is back up
@@ -33,13 +32,11 @@ class Job:
         # Place the rides that are down into the downRides list
         self.queueTimes.placeDownRides(allRides)
 
-        self.shortWaitAlreadyNotified = self.queueTimes.isLongWait(self.shortWaitAlreadyNotified)
-        shortWait = self.queueTimes.isShortWait(allRides, self.shortWaitAlreadyNotified)
-        self.shortWaitAlreadyNotified.extend(shortWait)
+        shortWait = self.queueTimes.isShortWait(allRides)
 
         # logging.info(self.queueTimes.getDownRides())
         logging.debug(f"Short Wait: {shortWait}")
-        logging.debug(f"Short Wait Already Notified: {self.shortWaitAlreadyNotified}")
+        logging.debug(f"Short Wait Already Notified: {self.queueTimes.shortWaitAlreadyNotified}")
 
         if len(newlyUpRides) > 0 or len(shortWait) > 0:
             # TODO: Send a notification that the ride is back up
@@ -57,7 +54,12 @@ class Job:
 
 
 if __name__ == "__main__":
-    logging.basicConfig(filename="log.txt", level=logging.DEBUG)
+    logging.basicConfig(
+        filename="log.txt",
+        level=logging.DEBUG,
+        format="%(levelname)s:%(asctime)s %(message)s",
+        datefmt="%m/%d/%Y %H:%M:%S",
+    )
     logging.info("Starting job")
     job = Job()
     timeToSleep = 60
