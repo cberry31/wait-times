@@ -23,7 +23,7 @@ class SES:
             },
             Message={
                 "Body": {
-                    "Text": {
+                    "Html": {
                         "Charset": "UTF-8",
                         "Data": body,
                     },
