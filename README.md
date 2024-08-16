@@ -31,4 +31,18 @@ The script runs every minute to ensure timely updates on ride wait times and sta
     - All logs will be written to `log.txt`
 5. To view logs live run `tail -f log.txt`
 
+### Modifying rides.yaml
+- Update wait_times to the desired wait time in minutes in this format
+    ```
+    wait_times:
+      ride_id: time_you_want_to_wait_in_minutes
+    ```
+- Update the rides section to include the rides you want to know when they are back up
+    ```
+    rides:
+      - ride_id
+    ```
+- You can find the ride_id in `docs/allRides.yaml` or by going to the ride's page on [Queue-Times.com](https://queue-times.com/en-US) and looking at the URL
+    - Example: `https://queue-times.com/en-US/parks/1/rides/1` the ride_id would be `1`
+
 [Powered by Queue-Times.com](https://queue-times.com/en-US)

@@ -1,0 +1,541 @@
+allRides:
+  - id: 12428
+    name: "Adventureland Treehouse inspired by Walt Disney�s Swiss Family Robinson"
+    parkID: 16
+  - id: 326
+    name: "Indiana Jones� Adventure"
+    parkID: 16
+  - id: 296
+    name: "Jungle Cruise"
+    parkID: 16
+  - id: 288
+    name: "Walt Disney's Enchanted Tiki Room"
+    parkID: 16
+  - id: 304
+    name: "Davy Crockett's Explorer Canoes"
+    parkID: 16
+  - id: 306
+    name: "The Many Adventures of Winnie the Pooh"
+    parkID: 16
+  - id: 307
+    name: "it's a small world"
+    parkID: 16
+  - id: 285
+    name: "Alice in Wonderland"
+    parkID: 16
+  - id: 303
+    name: "Casey Jr. Circus Train"
+    parkID: 16
+  - id: 275
+    name: "Dumbo the Flying Elephant"
+    parkID: 16
+  - id: 277
+    name: "King Arthur Carrousel"
+    parkID: 16
+  - id: 278
+    name: "Mad Tea Party"
+    parkID: 16
+  - id: 279
+    name: "Matterhorn Bobsleds"
+    parkID: 16
+  - id: 280
+    name: "Mr. Toad's Wild Ride"
+    parkID: 16
+  - id: 281
+    name: "Peter Pan's Flight"
+    parkID: 16
+  - id: 282
+    name: "Pinocchio's Daring Journey"
+    parkID: 16
+  - id: 12108
+    name: "Sleeping Beauty Castle Walkthrough"
+    parkID: 16
+  - id: 283
+    name: "Snow White's Enchanted Wish"
+    parkID: 16
+  - id: 305
+    name: "Storybook Land Canal Boats"
+    parkID: 16
+  - id: 323
+    name: "Big Thunder Mountain Railroad"
+    parkID: 16
+  - id: 456
+    name: "Mark Twain Riverboat"
+    parkID: 16
+  - id: 331
+    name: "Pirate's Lair on Tom Sawyer Island"
+    parkID: 16
+  - id: 328
+    name: "Sailing Ship Columbia"
+    parkID: 16
+  - id: 674
+    name: "Disneyland Railroad"
+    parkID: 16
+  - id: 690
+    name: "The Disneyland Story presenting Great Moments with Mr. Lincoln"
+    parkID: 16
+  - id: 324
+    name: "Chip 'n' Dale's GADGETcoaster"
+    parkID: 16
+  - id: 11980
+    name: "Goofy's How-to-Play Yard"
+    parkID: 16
+  - id: 11526
+    name: "Mickey & Minnie's Runaway Railway"
+    parkID: 16
+  - id: 709
+    name: "Mickey's House and Meet Mickey Mouse"
+    parkID: 16
+  - id: 332
+    name: "Roger Rabbit's Car Toon Spin"
+    parkID: 16
+  - id: 325
+    name: "Haunted Mansion Holiday"
+    parkID: 16
+  - id: 289
+    name: "Pirates of the Caribbean"
+    parkID: 16
+  - id: 6339
+    name: "Millennium Falcon: Smugglers Run"
+    parkID: 16
+  - id: 10903
+    name: "Millennium Falcon: Smugglers Run Single Rider"
+    parkID: 16
+  - id: 6340
+    name: "Star Wars: Rise of the Resistance"
+    parkID: 16
+  - id: 287
+    name: "Astro Orbitor"
+    parkID: 16
+  - id: 317
+    name: "Autopia"
+    parkID: 16
+  - id: 273
+    name: "Buzz Lightyear Astro Blasters"
+    parkID: 16
+  - id: 274
+    name: "Disneyland Monorail"
+    parkID: 16
+  - id: 276
+    name: "Finding Nemo Submarine Voyage"
+    parkID: 16
+  - id: 284
+    name: "Space Mountain"
+    parkID: 16
+  - id: 286
+    name: "Star Tours - The Adventures Continue"
+    parkID: 16
+  - id: 329
+    name: "Guardians of the Galaxy - Mission: BREAKOUT!"
+    parkID: 17
+  - id: 8843
+    name: "WEB SLINGERS: A Spider-Man Adventure"
+    parkID: 17
+  - id: 10907
+    name: "WEB SLINGERS: A Spider-Man Adventure Single Rider"
+    parkID: 17
+  - id: 873
+    name: "Red Car Trolley"
+    parkID: 17
+  - id: 2608
+    name: "Luigi's Rollickin' Roadsters"
+    parkID: 17
+  - id: 315
+    name: "Mater's Junkyard Jamboree"
+    parkID: 17
+  - id: 295
+    name: "Radiator Springs Racers"
+    parkID: 17
+  - id: 10904
+    name: "Radiator Springs Racers Single Rider"
+    parkID: 17
+  - id: 302
+    name: "Grizzly River Run"
+    parkID: 17
+  - id: 293
+    name: "Redwood Creek Challenge Trail"
+    parkID: 17
+  - id: 312
+    name: "Soarin' Around the World"
+    parkID: 17
+  - id: 321
+    name: "Animation Academy"
+    parkID: 17
+  - id: 6440
+    name: "Mickey's PhilharMagic"
+    parkID: 17
+  - id: 291
+    name: "Monsters, Inc. Mike & Sulley to the Rescue!"
+    parkID: 17
+  - id: 868
+    name: "Sorcerer's Workshop"
+    parkID: 17
+  - id: 294
+    name: "Turtle Talk with Crush"
+    parkID: 17
+  - id: 869
+    name: "The Bakery Tour"
+    parkID: 17
+  - id: 298
+    name: "Golden Zephyr"
+    parkID: 17
+  - id: 319
+    name: "Goofy's Sky School"
+    parkID: 17
+  - id: 301
+    name: "Silly Symphony Swings"
+    parkID: 17
+  - id: 10905
+    name: "Silly Symphony Swings Single Rider"
+    parkID: 17
+  - id: 316
+    name: "The Little Mermaid - Ariel's Undersea Adventure"
+    parkID: 17
+  - id: 11528
+    name: "World of Color � ONE"
+    parkID: 17
+  - id: 866
+    name: "Games of Pixar Pier"
+    parkID: 17
+  - id: 322
+    name: "Incredicoaster"
+    parkID: 17
+  - id: 10906
+    name: "Incredicoaster Single Rider"
+    parkID: 17
+  - id: 6643
+    name: "Inside Out Emotional Whirlwind"
+    parkID: 17
+  - id: 310
+    name: "Jessie's Critter Carousel"
+    parkID: 17
+  - id: 300
+    name: "Jumpin' Jellyfish"
+    parkID: 17
+  - id: 311
+    name: "Pixar Pal-A-Round - Swinging"
+    parkID: 17
+  - id: 5557
+    name: "Pixar Pal-A-Round � Non-Swinging"
+    parkID: 17
+  - id: 313
+    name: "Toy Story Midway Mania!"
+    parkID: 17
+  - id: 2495
+    name: "Disney and Pixar Short Film Festival"
+    parkID: 5
+  - id: 155
+    name: "Journey Into Imagination With Figment"
+    parkID: 5
+  - id: 13627
+    name: "Meet Beloved Disney Pals at Mickey & Friends"
+    parkID: 5
+  - id: 159
+    name: "Spaceship Earth"
+    parkID: 5
+  - id: 10916
+    name: "Guardians of the Galaxy: Cosmic Rewind"
+    parkID: 5
+  - id: 158
+    name: "Mission: SPACE"
+    parkID: 5
+  - id: 160
+    name: "Test Track"
+    parkID: 5
+  - id: 10900
+    name: "Test Track Presented by Chevrolet Single Rider"
+    parkID: 5
+  - id: 7323
+    name: "Awesome Planet"
+    parkID: 5
+  - id: 12387
+    name: "Journey of Water, Inspired by Moana"
+    parkID: 5
+  - id: 156
+    name: "Living with the Land"
+    parkID: 5
+  - id: 151
+    name: "Soarin' Around the World"
+    parkID: 5
+  - id: 153
+    name: "The Seas with Nemo & Friends"
+    parkID: 5
+  - id: 152
+    name: "Turtle Talk With Crush"
+    parkID: 5
+  - id: 829
+    name: "Canada Far and Wide in Circle-Vision 360"
+    parkID: 5
+  - id: 2679
+    name: "Frozen Ever After"
+    parkID: 5
+  - id: 466
+    name: "Gran Fiesta Tour Starring The Three Caballeros"
+    parkID: 5
+  - id: 6701
+    name: "Meet Anna and Elsa at Royal Sommerhus"
+    parkID: 5
+  - id: 10914
+    name: "Remy's Ratatouille Adventure"
+    parkID: 5
+  - id: 10915
+    name: "Remy's Ratatouille Adventure Single Rider"
+    parkID: 5
+  - id: 1184
+    name: "A Pirate's Adventure ~ Treasures of the Seven Seas"
+    parkID: 6
+  - id: 134
+    name: "Jungle Cruise"
+    parkID: 6
+  - id: 137
+    name: "Pirates of the Caribbean"
+    parkID: 6
+  - id: 355
+    name: "Swiss Family Treehouse"
+    parkID: 6
+  - id: 141
+    name: "The Magic Carpets of Aladdin"
+    parkID: 6
+  - id: 334
+    name: "Walt Disney's Enchanted Tiki Room"
+    parkID: 6
+  - id: 133
+    name: "it's a small world"
+    parkID: 6
+  - id: 13764
+    name: "Casey Jr. Splash 'N' Soak Station"
+    parkID: 6
+  - id: 13763
+    name: "Cinderella Castle"
+    parkID: 6
+  - id: 132
+    name: "Dumbo the Flying Elephant"
+    parkID: 6
+  - id: 128
+    name: "Enchanted Tales with Belle"
+    parkID: 6
+  - id: 135
+    name: "Mad Tea Party"
+    parkID: 6
+  - id: 147
+    name: "Meet Ariel at Her Grotto"
+    parkID: 6
+  - id: 6700
+    name: "Meet Cinderella and a Visiting Princess at Princess Fairytale Hall"
+    parkID: 6
+  - id: 144
+    name: "Meet Daring Disney Pals as Circus Stars at Pete's Silly Sideshow"
+    parkID: 6
+  - id: 145
+    name: "Meet Dashing Disney Pals as Circus Stars at Pete's Silly Sideshow"
+    parkID: 6
+  - id: 6699
+    name: "Meet Princess Tiana and a Visiting Princess at Princess Fairytale Hall"
+    parkID: 6
+  - id: 171
+    name: "Mickey's PhilharMagic"
+    parkID: 6
+  - id: 136
+    name: "Peter Pan's Flight"
+    parkID: 6
+  - id: 161
+    name: "Prince Charming Regal Carrousel"
+    parkID: 6
+  - id: 129
+    name: "Seven Dwarfs Mine Train"
+    parkID: 6
+  - id: 126
+    name: "The Barnstormer"
+    parkID: 6
+  - id: 142
+    name: "The Many Adventures of Winnie the Pooh"
+    parkID: 6
+  - id: 127
+    name: "Under the Sea - Journey of The Little Mermaid"
+    parkID: 6
+  - id: 1181
+    name: "Walt Disney World Railroad - Fantasyland"
+    parkID: 6
+  - id: 130
+    name: "Big Thunder Mountain Railroad"
+    parkID: 6
+  - id: 1214
+    name: "Country Bear Musical Jamboree"
+    parkID: 6
+  - id: 13630
+    name: "Tiana's Bayou Adventure"
+    parkID: 6
+  - id: 465
+    name: "Tom Sawyer Island"
+    parkID: 6
+  - id: 1179
+    name: "Walt Disney World Railroad - Frontierland"
+    parkID: 6
+  - id: 140
+    name: "Haunted Mansion"
+    parkID: 6
+  - id: 1187
+    name: "Liberty Square Riverboat"
+    parkID: 6
+  - id: 356
+    name: "The Hall of Presidents"
+    parkID: 6
+  - id: 1188
+    name: "Main Street Vehicles"
+    parkID: 6
+  - id: 146
+    name: "Meet Mickey at Town Square Theater"
+    parkID: 6
+  - id: 1189
+    name: "Walt Disney World Railroad - Main Street, U.S.A."
+    parkID: 6
+  - id: 248
+    name: "Astro Orbiter"
+    parkID: 6
+  - id: 131
+    name: "Buzz Lightyear's Space Ranger Spin"
+    parkID: 6
+  - id: 125
+    name: "Monsters Inc. Laugh Floor"
+    parkID: 6
+  - id: 138
+    name: "Space Mountain"
+    parkID: 6
+  - id: 143
+    name: "Tomorrowland Speedway"
+    parkID: 6
+  - id: 1190
+    name: "Tomorrowland Transit Authority PeopleMover"
+    parkID: 6
+  - id: 11527
+    name: "TRON Lightcycle / Run"
+    parkID: 6
+  - id: 457
+    name: "Walt Disney's Carousel of Progress"
+    parkID: 6
+  - id: 7974
+    name: "Disney Junior Play and Dance!"
+    parkID: 7
+  - id: 12430
+    name: "Meet Ariel at Walt Disney Presents"
+    parkID: 7
+  - id: 2663
+    name: "Star Wars Launch Bay Theater"
+    parkID: 7
+  - id: 2577
+    name: "Star Wars Launch Bay: Meet Chewbacca"
+    parkID: 7
+  - id: 5145
+    name: "Walt Disney Presents"
+    parkID: 7
+  - id: 6704
+    name: "Meet Disney Stars at Red Carpet Dreams"
+    parkID: 7
+  - id: 1174
+    name: "For the First Time in Forever: A Frozen Sing-Along Celebration"
+    parkID: 7
+  - id: 6702
+    name: "Indiana Jones� Epic Stunt Spectacular!"
+    parkID: 7
+  - id: 6703
+    name: "Meet Olaf at Celebrity Spotlight"
+    parkID: 7
+  - id: 120
+    name: "Star Tours � The Adventures Continue"
+    parkID: 7
+  - id: 7333
+    name: "Vacation Fun - An Original Animated Short with Mickey & Minnie"
+    parkID: 7
+  - id: 6361
+    name: "Mickey & Minnie's Runaway Railway"
+    parkID: 7
+  - id: 118
+    name: "Muppet*Vision 3D"
+    parkID: 7
+  - id: 12425
+    name: "Meet Edna Mode at the Edna Mode Experience"
+    parkID: 7
+  - id: 117
+    name: "Toy Story Mania!"
+    parkID: 7
+  - id: 6368
+    name: "Millennium Falcon: Smugglers Run"
+    parkID: 7
+  - id: 10902
+    name: "Millennium Falcon: Smugglers Run Single Rider"
+    parkID: 7
+  - id: 6369
+    name: "Star Wars: Rise of the Resistance"
+    parkID: 7
+  - id: 1176
+    name: "Beauty and the Beast � Live on Stage"
+    parkID: 7
+  - id: 6378
+    name: "Lightning McQueen's Racing Academy"
+    parkID: 7
+  - id: 119
+    name: "Rock 'n' Roller Coaster Starring Aerosmith"
+    parkID: 7
+  - id: 10901
+    name: "Rock 'n' Roller Coaster Starring Aerosmith Single Rider"
+    parkID: 7
+  - id: 123
+    name: "The Twilight Zone Tower of Terror�"
+    parkID: 7
+  - id: 5477
+    name: "Alien Swirling Saucers"
+    parkID: 7
+  - id: 5476
+    name: "Slinky Dog Dash"
+    parkID: 7
+  - id: 657
+    name: "Festival of the Lion King"
+    parkID: 8
+  - id: 651
+    name: "Gorilla Falls Exploration Trail"
+    parkID: 8
+  - id: 113
+    name: "Kilimanjaro Safaris"
+    parkID: 8
+  - id: 655
+    name: "Wildlife Express Train"
+    parkID: 8
+  - id: 110
+    name: "Expedition Everest - Legend of the Forbidden Mountain"
+    parkID: 8
+  - id: 10921
+    name: "Feathered Friends in Flight!"
+    parkID: 8
+  - id: 112
+    name: "Kali River Rapids"
+    parkID: 8
+  - id: 111
+    name: "DINOSAUR"
+    parkID: 8
+  - id: 10920
+    name: "Finding Nemo: The Big Blue... and Beyond!"
+    parkID: 8
+  - id: 652
+    name: "The Boneyard"
+    parkID: 8
+  - id: 115
+    name: "TriceraTop Spin"
+    parkID: 8
+  - id: 249
+    name: "It's Tough to be a Bug!"
+    parkID: 8
+  - id: 116
+    name: "Meet Favorite Disney Pals at Adventurers Outpost"
+    parkID: 8
+  - id: 12451
+    name: "Meet Moana at Character Landing"
+    parkID: 8
+  - id: 4439
+    name: "Avatar Flight of Passage"
+    parkID: 8
+  - id: 4438
+    name: "Na'vi River Journey"
+    parkID: 8
+  - id: 6680
+    name: "The Animation Experience at Conservation Station"
+    parkID: 8
