@@ -30,6 +30,11 @@ The script runs every minute to ensure timely updates on ride wait times and sta
 4. Run `python job.py`
     - All logs will be written to `log.txt`
 5. To view logs live run `tail -f log.txt`
+6. Alternatively, you can use Docker and docker-compose
+    - Run `docker-compose up -d`
+    - To view logs run `docker-compose logs -f`
+    - To stop the container run `docker-compose down`
+    - Running `docker-compose up` will automatically show the logs in a live view
 
 ### Modifying rides.yaml
 - Update wait_times to the desired wait time in minutes in this format
