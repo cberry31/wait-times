@@ -1,6 +1,8 @@
+from datetime import datetime
 import logging
 import os
 import time
+import pytz
 from QueueTimes import QueueTimes
 from SES import SES
 
@@ -23,7 +25,6 @@ class Job:
         self.ses = SES()
 
     def main(self):
-        # TODO: Add in SES to send an email when a ride is back up
         # TODO: Think about adding a redis cache to store the downRides list
         # TODO: Add a table in the email showing all of the rides that we are tracking
 
@@ -34,18 +35,15 @@ class Job:
 
         # Place the rides that are down into the downRides list
         self.queueTimes.placeDownRides(allRides)
-
         shortWait = self.queueTimes.isShortWait(allRides)
 
-        # logging.info(self.queueTimes.getDownRides())
-        logging.debug(f"Short Wait: {shortWait}")
         logging.debug(f"Short Wait Already Notified: {self.queueTimes.shortWaitAlreadyNotified}")
 
         if len(newlyUpRides) > 0 or len(shortWait) > 0:
-            # TODO: Send a notification that the ride is back up
             logging.info(f"Newly Up Rides: {newlyUpRides}")
             logging.info(f"Short Wait: {shortWait}")
-            self.ses.sendEmail("Ride Status Update", f"Newly Up Rides: {newlyUpRides}\nShort Wait: {shortWait}")
+            email = self.formatEmail(shortWait, newlyUpRides)
+            self.ses.sendEmail("Ride Status Update", email)
 
     def getAllRides(self):
         allRides = []
@@ -55,6 +53,25 @@ class Job:
                 ridesByLand = land["rides"]
                 allRides.extend(self.queueTimes.filterRides(ridesByLand))
         return allRides
+
+    def formatEmail(self, shortWait, newlyUpRides):
+        email = ""
+        if len(newlyUpRides) > 0:
+            email += "<h3>Newly Up Rides:</h3>"
+            email += "<ul>"
+            for ride in newlyUpRides:
+                email += f"<li>{ride['name']} is back up with a current wait time of {ride['wait_time']} minutes!</li>"
+            email += "</ul>"
+        if len(shortWait) > 0:
+            email += "<h3>Short Wait Times:</h3>"
+            email += "<ul>"
+            for ride in shortWait:
+                email += f"<li>{ride['name']} has a short wait time of {ride['wait_time']} minutes!</li>"
+            email += "</ul>"
+        currentTime = datetime.now(pytz.timezone("America/Los_Angeles")).strftime("%m/%d/%Y %H:%M:%S")
+        email += f"<br/><br/><hr/><footer>Time sent at {currentTime}</footer>"
+        logging.debug(f"Email: {email}")
+        return email
 
 
 if __name__ == "__main__":
