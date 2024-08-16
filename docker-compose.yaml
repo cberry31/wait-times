@@ -1,0 +1,11 @@
+version: "3"
+services:
+  wait-times:
+    container_name: wait-times
+    image: wait-times
+    build:
+      context: .
+      dockerfile: Dockerfile
+    restart: always
+    volumes:
+      - ./log.txt:/app/log.txt
